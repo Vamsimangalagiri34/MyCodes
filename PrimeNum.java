@@ -1,65 +1,39 @@
 class PrimeNum {
-    public static void main(String args[]) {
-        int num = 29; // Example number to check
-        boolean isPrime = true;
+    public static void main(String ae[]) {
+        int n = 9;
+        boolean isTrue = true;
 
-        if (num <= 1) {
-            isPrime = false;
+        if (n < 2) {
+            isTrue = false; // Set isTrue to false if n is less than 2
         } else {
-            for (int i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i == 0) {
-                    isPrime = false;
-                    break;  // exit the loop if a factor is found
+            for (int i = 2; i <= Math.sqrt(n); i++) {  // If a number has any divisors between 2 and its square root, it is not prime.
+                if (n % i == 0) {
+                    isTrue = false;
+                    break;
                 }
             }
         }
 
-        if (isPrime) {
-            System.out.println(num + " is a prime number");
-        } else {
-            System.out.println(num + " is not a prime number");
-        }
+        System.out.println(isTrue ? "prime" : "not a prime");
     }
 }
 
-// Example: Checking if 29 is a Prime Number
-// Using num / 2
-// If we check up to num / 2, we would iterate through the following steps:
+// Here's how it works:
+// Divisibility Check: You are checking the numbers from 2 to 6 (i.e., 2, 3, 4, 5, 6) to see if any of them divide 36.
 
-// num
-// =
-// 29
-// num=29
-// Check divisors from 2 to 14 (num / 2):
-// 29 % 2 ≠ 0
-// 29 % 3 ≠ 0
-// 29 % 4 ≠ 0
-// 29 % 5 ≠ 0
-// 29 % 6 ≠ 0
-// 29 % 7 ≠ 0
-// 29 % 8 ≠ 0
-// 29 % 9 ≠ 0
-// 29 % 10 ≠ 0
-// 29 % 11 ≠ 0
-// 29 % 12 ≠ 0
-// 29 % 13 ≠ 0
-// 29 % 14 ≠ 0
-// Since none of these numbers divide 29 without a remainder, 29 is confirmed as a prime number. However, we performed 13 checks.
+// If any of these numbers divide 36 evenly, 36 is not prime:
 
-// Using Math.sqrt(num)
-// If we check up to the square root of the number, we would iterate through fewer steps:
+// 36 ÷ 2 = 18 (divides evenly, so 36 is not prime)
+// 36 ÷ 3 = 12 (divides evenly, so 36 is not prime)
+// 36 ÷ 4 = 9 (divides evenly, so 36 is not prime)
+// 36 ÷ 6 = 6 (divides evenly, so 36 is not prime)
+// Since 36 is divisible by several numbers between 2 and 6, it is not prime.
 
-// num
-// =
-// 29
-// num=29
-// sqrt(num)
-// ≈
-// 5.39
-// sqrt(num)≈5.39
-// Check divisors from 2 to 5:
-// 29 % 2 ≠ 0
-// 29 % 3 ≠ 0
-// 29 % 4 ≠ 0
-// 29 % 5 ≠ 0
-// Since none of these numbers divide 29 without a remainder, 29 is confirmed as a prime number. We only performed 4 checks, which is much more efficient.
+// Why is this important?
+// If a number has any divisors between 2 and its square root, it is not prime.
+// If no divisors are found in this range (i.e., the number is not divisible by any numbers between 2 and sqrt(n)), then the number is prime.
+// Example of a Prime Number:
+// Now, let's look at a prime number like 7:
+
+// sqrt(7) ≈ 2.65, so we only need to check divisibility by numbers 2 (since the next integer is greater than the square root).
+// 7 ÷ 2 does not divide evenly, so 7 is prime.

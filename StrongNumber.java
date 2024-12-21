@@ -1,20 +1,25 @@
-class StrongNumber{
-    public static void main(String agr[]){
-        int num=145;//some of factorial of numbers is called perfect number
-        int sum=0;
-        int rev=0,temp=0;
-        int rem;
-        int res=1;
-        
-       while(num>0){
-        rem=num%10;
-        for(int i=1;i<=rem;i++){
-            rev=res*i;
-           
+class StrongNumber {
+    public static void main(String agr[]) {
+        int num = 145; // 145 is a known strong number
+        int originalNum = num; // Store the original number to compare later
+        int sum = 0;
+
+        while (num > 0) {
+            int rem = num % 10;
+            int factorial = 1;
+
+            for (int i = 1; i <= rem; i++) {
+                factorial *= i;
+            }
+
+            sum += factorial;
+            num /= 10;
         }
-        num/=10;
-       }
-       System.out.println(rev);
-       }
+
+        if (sum == originalNum) {
+            System.out.println(originalNum + " is a strong number.");
+        } else {
+            System.out.println(originalNum + " is not a strong number.");
+        }
     }
-    
+}
