@@ -6,9 +6,18 @@ class PerfectNumber {
         int n = 28, sum = 0; // Example number 28
         // n = scan.nextInt();
 
-        for (int i = 1; i < n; i++) { // Use < instead of <= to exclude the number itself
-            if (n % i == 0) {//<= it mean it includs the number also
-                sum += i;
+        for (int i = 1; i <n; i++) { // Use < instead of <= to exclude the number itself
+            if (n % i == 0) {//<= it mean it includs the number also  already by i++ we are getting the actual value 
+
+                sum += i;  
+// 1                
+// 2
+// 4
+// 7
+// 14
+
+// sum+=14   already the sum have store 14 so we dont use <= if we use it getting double 
+                System.out.println(i);
             }
         }
 
