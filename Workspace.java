@@ -16,7 +16,6 @@ class Workspace {
                 if(temp>sl){
                     sl=temp;
                 }
-
                 fl=arr[j];
             }
         }
