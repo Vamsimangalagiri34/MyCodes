@@ -13,8 +13,8 @@ class PerfectNumber {
 // 1                
 // 2
 // 4
-// 7
-// 14
+// 7 
+// 14 
 
 // sum+=14   already the sum have store 14 so we dont use <= if we use it getting double 
                 System.out.println(i);

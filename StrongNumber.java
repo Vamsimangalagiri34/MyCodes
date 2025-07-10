@@ -1,9 +1,10 @@
 class StrongNumber {
     public static void main(String agr[]) {
-        int num = 145; // 145 is a known strong number
-        int originalNum = num; // Store the original number to compare later
-        int sum = 0;
 
+        int target=150;
+for(int a=1;a<=target;a++){
+    int num=a;
+    int sum=0;
         while (num > 0) {
             int rem = num % 10;
             int factorial = 1;
@@ -16,10 +17,11 @@ class StrongNumber {
             num /= 10;
         }
 
-        if (sum == originalNum) {
-            System.out.println(originalNum + " is a strong number.");
-        } else {
-            System.out.println(originalNum + " is not a strong number.");
-        }
+        if (sum == a) {
+            System.out.println(a + " is a strong number.");
+        } 
+
+        sum=0;
+    }
     }
 }

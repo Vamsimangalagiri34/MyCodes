@@ -11,3 +11,5 @@ class Even{
         }
     }
 }
+
+// Since all operations within the loop run in constant time, and the loop itself runs n times, the overall time complexity is O(n).

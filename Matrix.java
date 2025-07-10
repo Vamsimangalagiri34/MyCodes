@@ -2,7 +2,7 @@ class Matrix{
     public static void main(String k[]){
         int rows=4;
         int cols=4;
-        int mat[][]=new int[rows][cols];
+        int mat[][]=new int[rows][cols]; 
         // for(int i=0;i<rows;i++){
         //     for(int j=0;j<cols;j++){
         //         mat[i][j]=0;

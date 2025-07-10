@@ -10,3 +10,4 @@ class Factorial{
     }
 }
 //The factorial of a number is the product of all positive integers less than or equal to that number. It is denoted by the symbol n!,
+// Since the loop runs n times and all operations within the loop are constant time, the overall time complexity is O(n).

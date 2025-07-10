@@ -18,3 +18,7 @@ class AmstrongNumber{
     }
     }
 }
+
+// Since the number of iterations is equal to the number of digits in the number, the time complexity is proportional to the number of digits, which is denoted as 
+// o(d)
+// .

@@ -8,4 +8,5 @@ class Factors{
         }
     }
 }
+
 //Factors of a number are integers that divide that number exactly without leaving a remainder.

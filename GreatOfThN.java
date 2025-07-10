@@ -14,3 +14,4 @@ class GreatOfThN{
         }
     }
 }
+// The time complexity of your code is O(1)

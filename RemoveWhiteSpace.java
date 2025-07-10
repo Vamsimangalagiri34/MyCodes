@@ -3,7 +3,7 @@ class RemoveWhiteSpace{
         String str="hello india im frmm guess";
         String sa[]=str.split("\\s+");//it will remove what spaces
         System.out.println(java.util.Arrays.toString(sa));
-           String input = "Hello, World! 123.";
+        String input = "Hello, World! 123.";
         String result = input.replaceAll("[^a-zA-Z0-9]", "");
         System.out.println(result);  // Output: HelloWorld123
     }

@@ -17,3 +17,8 @@ class HashardNumber{
         System.out.println("not a hashard number");
     }
 }
+
+
+// The time complexity of your Harshad (or Hashard) number code is O(d), where 
+// 𝑑
+//  is the number of digits in the number num.
